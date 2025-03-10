@@ -1,2 +1,2 @@
 #prueba 2
-print("Hola Mundo2")
+print("Linux")
