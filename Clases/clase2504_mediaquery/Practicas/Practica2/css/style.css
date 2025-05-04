@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    padding: 5%;
+    text-align: center;
+}
+article{
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: aliceblue;
+
+}
+
+@media screen and (min-width:600px) {
+    article{
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:1024px) { /*min-width, los estilos se aplicarán con mínimo del tamaño indicado*/
+    article{
+        width: 30%;
+        display: inline-block;
+    }
+}

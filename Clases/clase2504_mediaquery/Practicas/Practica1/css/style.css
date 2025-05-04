@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header, footer{
+    padding: 3%;
+    background-color: rgb(146, 146, 226);
+}
+
+main{
+    padding: 5%;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+section{
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px){/*max-width, los estilos se aplicarán por debajo del máximo indicado*/
+    header{
+        background-color: aquamarine;
+    }
+    .seccion1{
+        background-color: bisque;
+    }
+    .seccion2{
+        background-color: rgb(92, 69, 194);
+    }
+    .seccion3{
+        background-color: rgb(55, 197, 102);
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
