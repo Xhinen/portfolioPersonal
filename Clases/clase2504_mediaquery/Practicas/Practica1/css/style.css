@@ -3,9 +3,11 @@
     margin: 0;
 }
 
-header, footer{
+header, footer{ /*el orden es arriba, abajo, izquierda, derecha*/
     padding: 3%;
-    background-color: rgb(146, 146, 226);
+    background-color: #333;
+    text-align: center;
+    color: white;
 }
 
 main{
@@ -19,14 +21,15 @@ body{
 section{
     padding: 2rem;
     margin-bottom: 2rem;
+    background-color: #f0f0f0;
 }
 
 @media screen and (max-width:768px){/*max-width, los estilos se aplicarán por debajo del máximo indicado*/
     header{
-        background-color: aquamarine;
+        background-color: #dfeffc;
     }
     .seccion1{
-        background-color: bisque;
+        background-color: #fff8dc;
     }
     .seccion2{
         background-color: rgb(92, 69, 194);

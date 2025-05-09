@@ -1,0 +1,29 @@
+/* 
+
+APUNTES:
+
+
+- block: Ocupa todo el ancho disponible. Inicia en linea nueva
+- inline: No inicia nueva linea. Se ocupa su contenido. No acepta ancho/alto
+- inline-block: como inline pero permite ancho/alto
+- none: 
+- flex:
+
+
+*/
+.block{
+    display: block;
+    background-color: lightblue;
+}
+
+.inline{
+    display: inline;
+    background-color: lightgreen;
+}
+
+.inline-block{
+    display: inline-block;
+    width: 150px;
+    height: 5px;
+
+}
