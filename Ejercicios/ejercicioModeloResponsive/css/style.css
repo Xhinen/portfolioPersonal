@@ -4,7 +4,8 @@
     box-sizing: border-box;
 
     /* 
-    Es una propiedad que controla como se calcula las dimensiones de un elemento (ancho y alto), en relacion a su contenido padding y border.
+    Es una propiedad que controla como se calcula las dimensiones
+    de un elemento (ancho y alto), en relacion a su contenido padding y border.
 
     - content-box: Solo el contenido (padding y border se suman después).
     - border-box: Incluye contenido + padding + border.
@@ -18,17 +19,22 @@ body{
     background-color: #f4f4f4;
 }
 
-.header{
+.header, .footer{
     background-color: #17a2b8;
     padding: 20px;
     text-align: center;
     color: white;
 }
 
+.header h1{
+    padding: 20px;
+}
+
 .contenido{
     overflow: auto;
     /* 
-    Controla lo que ocurre cuando el contenido de un elemento se desborda de su caja
+    Controla lo que ocurre cuando el contenido de un elemento
+    se desborda de su caja
 
         - visible: Valor dfecto. El contenido se sale de la caja.
         - hidden: Oculta el contenid oque se sale del área.
@@ -36,6 +42,7 @@ body{
         - auto: Muestra scroll si el contenido lo necesita.
 
     */
+
 }
 
 .menu{
@@ -46,6 +53,7 @@ body{
 }
 
 .menu a{
+    float: left;
     background-color: #d1ecf1;
     padding: 10px;
     margin-top: 10px;
@@ -53,4 +61,36 @@ body{
     color: #0c5436;
     text-decoration: none;
     border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main{
+    float: left;
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.main p{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.right{
+    float: left;
+    background-color: bisque;
+    width: 20%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.right h2{
+    padding: 10px;
+}
+
+.right p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
 }

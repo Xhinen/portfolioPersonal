@@ -35,10 +35,8 @@ p{
     font-size: 1.5rem;
 }
 
-/* Unidad em -> Relative to Parent 
-- Cuidado cuando se utiliza herencia
+/* Unidad em -> Relative to Parent - Cuidado cuando se utiliza herencia */
 
-*/
 
 body{
     font-size: 16px;
