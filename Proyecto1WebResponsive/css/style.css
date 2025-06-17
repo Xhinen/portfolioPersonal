@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
 }
 
 /* Quitamos la decoración de los enlaces y de las listas */
@@ -29,34 +30,79 @@ header{
     font-size: 300%;
 }
 
-nav{
-    display: block;
-    cursor: default;
+/* Menu de la web */
+section.seccionMenu{
     background-color: #474747;
-    padding: 1em;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     
 }
 
-#menu{
-    text-align: center;
+.boton-menu{
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-#menu li{
-    display: inline-block;
+/* .boton-menu:hover{
+    transform: scale(1.1);
+} */
+
+.menu-principal{
+    display: flex;
+    justify-content: ce nter;
+    gap: 24px;
 }
 
-#menu li a{
+.menu-principal a{
     color: #e0e0e0;
+    text-decoration: none;
     font-size: 16px;
     padding: 10px 14px;
-    transition: background 0.3s, color 0.3s;
     border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
-#menu li a:hover{
+.menu-principal a:hover{
     background-color: #fff;
     color: #474747;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 770px){
+    .boton-menu{
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+
+    section.seccionMenu{
+        justify-content: flex-end;
+    }
+
+    .menu-principal{
+        display: none;
+        flex-direction: column;
+        gap: 12px;/* espacio vertical */
+        background-color: #474747;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .menu-principal.menu-desplegado{
+        display: flex;
+    }
 }
 
 /*las propiedades son solo para mostrarlo en la web, es provisional */
@@ -73,6 +119,13 @@ nav{
 }
 
 .seccion2{
+    height: 15em;
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+}
+
+.seccion3{
     height: 15em;
     background-color: #474747;
     color: #fff;
