@@ -144,10 +144,60 @@ header {
     }
 }
 
-/* Secciones */
+/* Slider */
 #banner {
-    height: 20em;
-    background-color: #2196f3;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 50%;
+}
+
+.slides-container .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 3rem;
+    height: 50%;
+    background: transparent;/* ya hereda del banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
 }
 
 section {
@@ -155,18 +205,6 @@ section {
     text-align: center;
     padding: 4em 0;
 }
-
-/* .seccion1 {
-    background-color: #333;
-}
-
-.seccion2 {
-    background-color: #474747;
-}
-
-.seccion3 {
-    background-color: #595959;
-} */
 
 #contenido p{
     border: 1px solid #2196f3;
@@ -177,26 +215,12 @@ section {
     line-height: 200%;
 }
 
-#proyectos p{
-    column-count: 2;
-    column-gap: 2em;
-}
-
-#contacto{
-    background-color: #2196f3;
-    border: 1px solid #2196f3;
-}
-
 .leyenda{
     font-family: 'Century Gothic',sans-serif;
     color: #2196f3;
     font-size: 200%;
     padding: 1em;
     text-shadow: 2px 2px 8px #000;
-}
-
-.leyblanco{
-    color: white
 }
 
 /* Pie de página */

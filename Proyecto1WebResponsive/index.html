@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Alberto</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- <link rel="stylesheet" href="css/slider.css"> -->
 </head>
 <body>
 
@@ -49,25 +49,16 @@
 
     </nav>
 
-    <section id="banner"></section>
-
-<!--     <section class="seccion seccion1">
-
-        <h2>SECCIÓN 1</h2>
-
+    <section id="banner">
+        <div class="slider">
+            <div class="slides-container">
+                <!-- Aquí se insertarán los slides mediante JS -->
+            </div>
+            <button class="prev">&#10094</button>
+            <button class="next">&#10095</button>
+        </div>
     </section>
 
-    <section class="seccion seccion2">
-
-        <h2>SECCIÓN 2</h2>
-
-    </section>
-
-    <section class="seccion seccion3">
-
-        <h2>SECCIÓN 3</h2>
-
-    </section> -->
     <section id="contenido">
         <section id="proyectos" class="slide">
             <div class="leyenda">Proyectos</div>
@@ -82,17 +73,9 @@
             <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>        
         </section>
         <section id="contacto" class="slide">
-            <div class="leyenda leyblanco">Contacto</div>
+            <div class="leyenda">Contacto</div>
             <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>        
         </section>
-        <div class="dots-container">
-            <div class="dot" onclick="goToSlide(1)"></div>
-            <div class="dot" onclick="goToSlide(2)"></div>
-            <div class="dot" onclick="goToSlide(3)"></div>
-            <div class="dot" onclick="goToSlide(4)"></div>
-        </div>
-        <div class="arrow arrow-left" onclick="prevSlide()">◄</div>
-        <div class="arrow arrow-right" onclick="nextSlide()">►</div>
     </section>
     <footer>
 
@@ -105,7 +88,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/slide.js"></script>
+    <script src="js/slider.js"></script>
     
 </body>
 </html>
