@@ -21,7 +21,7 @@ body {
 header {
     text-align: center;
     padding: 3em;
-    background-color: aqua;
+    background-color: white;
 }
 
 #titulo {
@@ -147,11 +147,11 @@ header {
 /* Secciones */
 #banner {
     height: 20em;
-    background-color: #676767;
+    background-color: #2196f3;
 }
 
-.seccion {
-    color: #fff;
+section {
+    /* color: #fff; */
     text-align: center;
     padding: 4em 0;
 }
@@ -168,8 +168,43 @@ header {
     background-color: #595959;
 }
 
+#contenido p{
+    border: 1px solid #2196f3;
+    font-size: 160%;
+    text-align: justify;
+    margin: 3%;
+    padding: 3%;
+    line-height: 200%;
+}
+
+#proyectos p{
+    column-count: 2;
+    column-gap: 2em;
+}
+
+#contacto{
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+}
+
+.leyenda{
+    font-family: 'Century Gothic',sans-serif;
+    color: #2196f3;
+    font-size: 200%;
+    padding: 1em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.leyblanco{
+    color: white
+}
+
 /* Pie de página */
-footer {
+/* footer{
+
+} */
+
+#pie {
     height: 10em;
     background-color: #fff;
     color: #333;
