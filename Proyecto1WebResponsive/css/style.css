@@ -151,8 +151,13 @@ header {
 section {
     /* color: #fff; */
     text-align: center;
-    padding: 4em 0;
+    padding: 3em 0;
 }
+
+/* #contenido{
+    text-align: center;
+    padding: 0;
+} */
 
 #contenido p{
     border: 1px solid #2196f3;
@@ -167,7 +172,7 @@ section {
     font-family: 'Century Gothic',sans-serif;
     color: #2196f3;
     font-size: 200%;
-    padding: 1em;
+    /* padding: 1em; */
     text-shadow: 2px 2px 8px #000;
 }
 
@@ -217,7 +222,7 @@ section {
     background: transparent;/* ya hereda del banner */
     padding: 0 2rem;
     box-sizing: border-box;
-    padding-bottom: 4rem; /* da espacio para los dots */
+    padding-bottom: 2rem; /* espacio para los puntos por arriba, entre el texto del slide y los puntos*/
 }
 
 .slide .leyenda {
