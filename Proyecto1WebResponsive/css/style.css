@@ -286,6 +286,19 @@ header {
 
 } */
 
+footer .icons {
+    text-align: center;
+    margin: 0;
+}
+
+    footer .icons a {
+        color: #999;
+    }
+
+        footer .icons a:hover {
+            color: #474747;
+        }
+
 .icon.brands:before {
     font-family: 'Font Awesome 5 Brands';
 }
@@ -307,6 +320,10 @@ ul.icons {
         }
 
         ul.icons li a, ul.icons li span {
-            /* font-size: 2em; */
+            font-size: 2em;
             border: 0;
         }
+
+.label{
+    display: none;
+}
