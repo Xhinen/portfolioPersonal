@@ -286,44 +286,44 @@ header {
 
 } */
 
-footer .icons {
+footer .iconos {
     text-align: center;
     margin: 0;
 }
 
-    footer .icons a {
-        color: #999;
-    }
-
-        footer .icons a:hover {
-            color: #474747;
-        }
-
-.icon.brands:before {
-    font-family: 'Font Awesome 5 Brands';
+footer .iconos a {
+    color: #999;
 }
 
-ul.icons {
+footer .iconos a:hover {
+    color: #474747;
+}
+
+ul.iconos {
     cursor: default;
     list-style: none;
     padding-left: 0;
 }
 
-    ul.icons li {
-        display: inline-block;
-        line-height: 1em;
-        padding-left: 1.5em;
-    }
+ul.iconos li {
+    display: inline-block;
+    line-height: 1em;
+    padding-left: 1.5em;
+}
 
-        ul.icons li:first-child {
-            padding-left: 0;
-        }
+ul.iconos li:first-child {
+    padding-left: 0;
+}
 
-        ul.icons li a, ul.icons li span {
-            font-size: 2em;
-            border: 0;
-        }
+ul.iconos li a, ul.iconos li span {
+    font-size: 2em;
+    border: 0;
+}
 
 .label{
     display: none;
+}
+
+.iconos.marcas:before {
+    font-family: 'Font Awesome 5 Brands';
 }
