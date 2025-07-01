@@ -1,3 +1,5 @@
+@import url("fontawesome-all.min.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -177,11 +179,6 @@ header {
     padding: 1.5em 0 0;
 }
 
-/* Pie de página */
-/* footer{
-
-} */
-
 #pie {
     height: 10em;
     background-color: #fff;
@@ -283,3 +280,33 @@ header {
 .slider-dots .dot.active{
     background: white;
 }
+
+/* Pie de página */
+/* footer{
+
+} */
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+    ul.icons li {
+        display: inline-block;
+        line-height: 1em;
+        padding-left: 1.5em;
+    }
+
+        ul.icons li:first-child {
+            padding-left: 0;
+        }
+
+        ul.icons li a, ul.icons li span {
+            /* font-size: 2em; */
+            border: 0;
+        }
