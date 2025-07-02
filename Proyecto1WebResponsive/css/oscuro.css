@@ -16,19 +16,29 @@ button{
     cursor: pointer;
 }
 
+body.oscuro{/*esto hereda de body*/
+    background-color: #333;
+    color: #e0e0e0;
+}
+
 button:hover{
     background-color: #444;
 }
-#banner.oscuro{
-    background: #333;
-    color: #e0e0e0;
-}
-#pie.oscuro{
+
+.oscuro footer{
     background: #333;
     color: #e0e0e0;
 }
 
-body.oscuro{/*esto hereda de body*/
-    background-color: #333;
-    color: #f0f0f0;
+.oscuro footer .iconos a:hover {
+    color: #e0e0e0;
+}
+
+.oscuro p{
+    color: #e0e0e0;
+}
+
+#banner.oscuro{
+    background: #333;
+    color: #e0e0e0;
 }

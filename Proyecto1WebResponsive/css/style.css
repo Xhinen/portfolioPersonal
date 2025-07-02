@@ -180,14 +180,6 @@ header {
     padding: 1.5em 0 0;
 }
 
-#pie {
-    height: 10em;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding-top: 3em;
-}
-
 /* Slider */
 #banner {
     position: relative;
@@ -283,9 +275,18 @@ header {
 }
 
 /* Pie de página */
-/* footer{
+footer{
+    height: 10em;
+    /* background-color: #fff; */
+    color: #333;
+    text-align: center;
+    /* padding-top: 3em; */
+}
 
-} */
+footer p{
+    padding-top: 3em;
+    /* color: #333; */
+}
 
 footer .iconos {
     padding-bottom: 0.5em;
