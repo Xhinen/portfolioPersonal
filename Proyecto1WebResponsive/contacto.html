@@ -6,6 +6,7 @@
     <title>Portfolio Alberto</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/oscuro.css"/>
+    <link rel="stylesheet" href="css/cookies.css"/>
 </head>
 <body>
 
@@ -15,6 +16,7 @@
 
             <h1><a href="index.html">Portfolio Alberto</a></h1>
             <button id="modoOscuro">Cambiar Tema</button>
+
         </div>
 
     </header>
@@ -31,13 +33,13 @@
 
                 <a href="proyectos.html">Proyectos</a>
                 
-                <ul class="menu-desplegable">
+<!--                 <ul class="menu-desplegable">
 
                     <li><a href="#">Proyecto 1</a></li>
                     <li><a href="#">Proyecto 2</a></li>
                     <li><a href="#">Proyecto 3</a></li>
 
-                </ul>
+                </ul> -->
 
             </li>
 
@@ -56,14 +58,25 @@
         </section>
     </section>
 
+    <div id="cookiePopup" class="cookie-popup">
+        <p>
+        Este sitio web utiliza cookies para mejorar tu experiencia de navegación, analizar el uso del sitio y habilitar funciones de redes sociales. Solo usamos cookies esenciales para el funcionamiento básico y cookies opcionales para analíticas y personalización. Puedes aceptar todas las cookies, rechazar las no esenciales o personalizar tus preferencias.
+        <br>
+        <a href="#">Política de Cookies</a>
+        </p>
+        <button onclick="aceptarCookies()">Aceptar todas</button>
+        <button onclick="rechazarCookies()">Rechazar no esenciales</button>
+        <button onclick="personalizarCookies()">Personalizar</button>
+    </div>
+
     <footer>
 
 		<ul class="iconos">
 			<li><a href="#" class="iconos marcas fa-twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="#" class="iconos marcas fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<!-- <li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 			<li><a href="#" class="iconos marcas fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			<li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li>
+			<!-- <li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li> -->
 		</ul>
 
         
@@ -72,7 +85,8 @@
         
     </footer>
 
-    <script src="js/menu.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
     <script src="js/oscuro.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
 </html>

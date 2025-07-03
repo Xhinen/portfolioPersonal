@@ -7,22 +7,22 @@
     padding: 50px;
 } */
 
-button{
+/* button{
     padding: 10px 20px;
     font-size: 16px;
     background-color: #222;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+} */
+
+/* Ajustes para el botón en modo oscuro */
+body.oscuro .switchBtn input:checked + .slidebtn {
+    background-color: #333; /* Color diferente para modo oscuro, si lo deseas */
 }
 
-body.oscuro{/*esto hereda de body*/
+.oscuro{
     background-color: #333;
-    color: #e0e0e0;
-}
-
-button:hover{
-    background-color: #444;
 }
 
 .oscuro footer{
@@ -34,8 +34,13 @@ button:hover{
     color: #e0e0e0;
 }
 
-.oscuro p{
+.oscuro section p{
     color: #e0e0e0;
+}
+
+.oscuro .cookie-popup{
+    background-color: #fff;
+    color: #333;
 }
 
 #banner.oscuro{
