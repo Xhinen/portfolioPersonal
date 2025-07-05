@@ -15,7 +15,12 @@
         <div id="titulo">
 
             <h1><a href="index.html">Portfolio Alberto</a></h1>
-            <button id="modoOscuro">Cambiar Tema</button>
+            <!-- <button id="modoOscuro">Cambiar Tema</button> -->
+            <button id="toggleTema">
+                <span class="icono-claro">🌙</span>
+                <span class="icono-oscuro">☀️</span>
+            </button>
+
         </div>
 
     </header>
@@ -51,10 +56,12 @@
     </nav>
 
     <section id="contenido">
+        
         <section id="proyectos" class="slide">
             <div class="leyenda">Proyectos</div>
             <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>
         </section>
+       
     </section>
 
     <div id="cookiePopup" class="cookie-popup">
@@ -68,24 +75,24 @@
         <button onclick="personalizarCookies()">Personalizar</button>
     </div>
 
-    <footer>
-
-		<ul class="iconos">
-			<li><a href="#" class="iconos marcas fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="iconos marcas fa-github"><span class="label">GitHub</span></a></li>
-			<!-- <li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-			<li><a href="#" class="iconos marcas fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			<!-- <li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li> -->
-		</ul>
-
-        
-        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
-        
-        
-    </footer>
-
     <!-- <script src="js/menu.js"></script> -->
+    <script src="js/slider.js"></script>
     <script src="js/oscuro.js"></script>
     <script src="js/cookies.js"></script>
 </body>
+<footer>
+
+    <ul class="iconos">
+        <li><a href="#" class="iconos marcas fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="iconos marcas fa-github"><span class="label">GitHub</span></a></li>
+        <!-- <li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+        <li><a href="#" class="iconos marcas fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+        <!-- <li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li> -->
+    </ul>
+
+    
+    <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+    
+    
+</footer>
 </html>
