@@ -22,6 +22,8 @@
 
 #toggleTema:hover{    
     background-color: #444;
+    transition: 0.8s ease, transform 0.2s ease-in-out; /*animación al pasar por encima el puntero del ratón*/
+    transform: scale(1.1);/*Aumento del icono al pasar el ratón por encima*/
 }
 
 .oscuro #banner{
