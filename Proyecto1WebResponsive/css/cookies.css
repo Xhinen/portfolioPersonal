@@ -31,3 +31,14 @@
 .cookie-popup button:hover{
     background-color: #444;
 }
+
+@media screen and (max-width: 590px){
+    .cookie-popup p{
+        display: none;
+        
+    }
+    .cookie-popup button{
+        width: 100%;
+        flex-direction: column;
+    }
+}
