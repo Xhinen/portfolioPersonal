@@ -162,7 +162,7 @@ header {
 }
 
 #contenido p{
-    border: 1px solid #2196f3;
+    border: 1px solid #0aa5ec;
     font-size: 160%;
     text-align: justify;
     margin: 3%;
@@ -172,7 +172,7 @@ header {
 
 .leyenda{
     font-family: 'Century Gothic',sans-serif;
-    color: #2196f3;
+    color: #0aa5ec;
     text-align: center;
     font-size: 200%;
     /* font-weight: bold; */
