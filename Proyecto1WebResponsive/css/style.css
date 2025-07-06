@@ -1,12 +1,12 @@
 @import url("fontawesome-all.min.css");
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul, li {
+ul, li{
     list-style: none;
 }
 
@@ -15,42 +15,42 @@ a {
     color: inherit;
 }
 
-body {
+body{
     font-family: 'Century Gothic', sans-serif;
 }
 
 /* Cabecera */
-header {
+header{
     text-align: center;
     padding: 3em;
     background-color: white;
 }
 
-#titulo {
+#titulo{
     margin-bottom: 0.5em;
 }
 
-#titulo a {
+#titulo a{
     color: #474747;
 }
 
-#titulo h1 {
+#titulo h1{
     color: #333;
     font-size: 300%;
 }
 
 /* Menú */
-.menu-container {
+.menu-container{
     background-color: #474747;
-    padding: 16px 20px;
+    padding: 1rem 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.boton-menu {
-    font-size: 28px;
+.boton-menu{
+    font-size: 1.75rem;
     color: #fff;
     display: none;
     cursor: pointer;
@@ -59,31 +59,31 @@ header {
     transition: transform 0.3s ease;
 }
 
-.menu-principal {
+.menu-principal{
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
-.menu-principal li {
+.menu-principal li{
     position: relative;
 }
 
-.menu-principal a {
+.menu-principal a{
     color: #e0e0e0;
-    font-size: 16px;
-    padding: 10px 14px;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
 }
 
-.menu-principal a:hover {
+.menu-principal a:hover{
     background-color: #fff;
     color: #474747;
 }
 
 /* Submenú desplegable */
-.menu-desplegable {
+/* .menu-desplegable {
     margin-top: 10px;
     display: none;
     position: absolute;
@@ -110,11 +110,12 @@ header {
 
 .menu-principal li:hover .menu-desplegable {
     display: block;
-}
+} */
 
 /* Responsive */
 @media screen and (max-width: 770px){
     .boton-menu {
+        text-align: center;
         display: block;
     }
 
@@ -125,25 +126,35 @@ header {
     .menu-principal {
         display: none;
         flex-direction: column;
-        gap: 12px;
+        gap: 0.75rem;
         background-color: #474747;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        padding: 15px 20px;
+        padding: 1rem 1.25rem;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         z-index: 100;
     }
 
-    .menu-principal.menu-desplegado {
+    .menu-principal li{
+        width: 100%;
+    }
+
+    .menu-principal li a{
+        /* text-align: center; */
+        display: block;
+        width: 100%;
+    }
+
+    .menu-principal.menu-desplegado{
         display: flex;
     }
 
-    .menu-principal li:hover .menu-desplegable {
+/*     .menu-principal li:hover .menu-desplegable{
         position: static;
         box-shadow: none;
-    }
+    } */
 
     #banner{
         display: none;
@@ -195,37 +206,37 @@ footer p{
     /* color: #333; */
 }
 
-footer .iconos {
+footer .iconos{
     padding-bottom: 0.5em;
     text-align: center;
     margin: 0;
 }
 
-footer .iconos a {
+footer .iconos a{
     color: #999;
 }
 
-footer .iconos a:hover {
+footer .iconos a:hover{
     color: #474747;
 }
 
-ul.iconos {
+ul.iconos{
     cursor: default;
     list-style: none;
     padding-left: 0;
 }
 
-ul.iconos li {
+ul.iconos li{
     display: inline-block;
     line-height: 1em;
     padding-left: 1.5em;
 }
 
-ul.iconos li:first-child {
+ul.iconos li:first-child{
     padding-left: 0;
 }
 
-ul.iconos li a, ul.iconos li span {
+ul.iconos li a, ul.iconos li span{
     font-size: 2em;
     border: 0;
 }
@@ -234,6 +245,6 @@ ul.iconos li a, ul.iconos li span {
     display: none;
 }
 
-.iconos.marcas:before {
+.iconos.marcas:before{
     font-family: 'Font Awesome 5 Brands';
 }

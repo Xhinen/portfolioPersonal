@@ -7,7 +7,7 @@
     padding: 50px;
 } */
 
-#toggleTema{
+#modoOscuro{
     padding: 10px 10px;
     font-size: 16px;
     background-color: #222;
@@ -20,7 +20,7 @@
     z-index: 1000;
 }
 
-#toggleTema:hover{    
+#modoOscuro:hover{    
     background-color: #444;
     transition: 0.8s ease, transform 0.2s ease-in-out; /*animación al pasar por encima el puntero del ratón*/
     transform: scale(1.1);/*Aumento del icono al pasar el ratón por encima*/
