@@ -26,7 +26,7 @@ function rechazarCookies() {
     alert("Funcionalidad de personalización en desarrollo.");
 } */
 
-// Mostrar popup de personalización
+// Mostrar popup de personalización, añadido con .classList.add/remove("hidden") la animación del banner y el popup
 function personalizarCookies() {
     document.getElementById("personalizarPopup").classList.remove("hidden");
     document.getElementById("cookiePopup").classList.add("hidden"); // Oculta el banner
