@@ -30,12 +30,8 @@ header{
     margin-bottom: 0.5em;
 }
 
-#titulo a{
-    color: #474747;
-}
-
 #titulo h1{
-    color: #333;
+    color: #474747;
     font-size: 300%;
 }
 
@@ -78,8 +74,8 @@ header{
 }
 
 .menu-principal a:hover{
-    background-color: #fff;
-    color: #474747;
+    background-color: #e0e0e0;
+    color: #333;
 }
 
 /* Submenú desplegable */
