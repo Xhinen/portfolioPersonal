@@ -85,8 +85,13 @@ body.oscuro .icono-oscuro{
 }
 
 .oscuro .cookie-popup{
-    background-color: #fff;
-    color: #333;
+    background-color: #e0e0e0;
+    color: #474747;
+}
+
+.oscuro .cookie-personalizar-popup{
+    background-color: #e0e0e0;
+    color: #474747;
 }
 
 .oscuro #tituloCookies{

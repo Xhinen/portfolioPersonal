@@ -22,7 +22,7 @@
     cursor: pointer;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #222;
+    background-color: #474747;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -50,8 +50,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #222;
-    color: #fff;
+    background-color: #272727;
+    color: #e0e0e0;
     padding: 30px;
     border-radius: 10px;
     z-index: 1101;
