@@ -12,7 +12,7 @@
 }
 
 .cookie-popup a{
-    display: block;
+    display: inline-block;
     padding: 10px 0;
     color: #007bff; /*otro azul #0aa5ec*/
     text-decoration: underline;

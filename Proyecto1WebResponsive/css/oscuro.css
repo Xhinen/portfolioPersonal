@@ -10,8 +10,8 @@
 #modoOscuro{
     padding: 10px 10px;
     font-size: 16px;
-    background-color: #222;
-    color: white;
+    background-color: #333;
+    color: #e0e0e0;
     border-radius: 50px;
     cursor: pointer;
     position: fixed;
@@ -27,8 +27,12 @@
 }
 
 .oscuro #banner{
-    background: #333;
-    color: #e0e0e0;
+    background-color: #cccccc;
+    color: #333;
+}
+
+#banner .slides-container p{
+    color: #333;
 }
 
 /* Estilos para los íconos */
@@ -51,10 +55,11 @@ body.oscuro .icono-oscuro{
 /* Modo oscuro general */
 .oscuro{
     background-color: #333;
+    color: #e0e0e0;
 }
 
 .oscuro footer{
-    background: #333;
+    background-color: #333;
     color: #e0e0e0;
 }
 
@@ -71,4 +76,6 @@ body.oscuro .icono-oscuro{
     color: #333;
 }
 
-
+.oscuro #tituloCookies{
+    color: #e0e0e0;
+}
