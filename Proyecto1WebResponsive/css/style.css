@@ -17,13 +17,13 @@ a {
 
 body{
     font-family: 'Century Gothic', sans-serif;
+    background-color: #e0e0e0;
 }
 
 /* Cabecera */
 header{
     text-align: center;
     padding: 3em;
-    background-color: white;
 }
 
 #titulo{
@@ -31,13 +31,13 @@ header{
 }
 
 #titulo h1{
-    color: #474747;
+    color: #0aa5ec;
     font-size: 300%;
 }
 
 /* Menú */
 .menu-container{
-    background-color: #474747;
+    background-color: #777;
     padding: 1rem 1.25rem;
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ header{
 
 .boton-menu{
     font-size: 1.75rem;
-    color: #fff;
+    color: #e0e0e0;
     display: none;
     cursor: pointer;
     position: absolute;
@@ -170,7 +170,10 @@ header{
 }
 
 #contenido p{
-    border: 1px solid #0aa5ec;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #474747;
     font-size: 160%;
     text-align: justify;
     margin: 3%;
@@ -191,21 +194,22 @@ header{
 /* Pie de página */
 footer{
     height: 10em;
-    /* background-color: #fff; */
+    background-color: #fafafa;
     color: #333;
+    border-top: 1px solid #eaeaea;
     text-align: center;
     /* padding-top: 3em; */
 }
 
 footer p{
-    padding-top: 3em;
-    /* color: #333; */
+    padding-top: 2em;
+    color: #474747;
 }
 
 footer .iconos{
-    padding-bottom: 0.5em;
+    padding-top: 2.5em;
     text-align: center;
-    margin: 0;
+    /* margin: 0; */
 }
 
 footer .iconos a{
@@ -216,6 +220,7 @@ footer .iconos a:hover{
     color: #474747;
 }
 
+/*Icono de RRSS en el footer*/
 ul.iconos{
     cursor: default;
     list-style: none;
