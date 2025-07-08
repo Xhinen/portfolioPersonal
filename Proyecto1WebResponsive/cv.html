@@ -15,7 +15,7 @@
         <div id="titulo">
 
             <h1><a href="index.html">Portfolio Alberto</a></h1>
-            <!-- <button id="modoOscuro">Cambiar Tema</button> -->
+            
             <button id="modoOscuro">
                 <span class="icono-claro">🌙</span>
                 <span class="icono-oscuro">☀️</span>
@@ -30,69 +30,70 @@
         <a href="#" id="enlace-menu" class="boton-menu">&#9776;</a>
 
         <ul id="menu" class="menu-principal">
-
             <li><a href="index.html">Inicio</a></li>
-
-            <li>
-
-                <a href="proyectos.html">Proyectos</a>
-                
-<!--                 <ul class="menu-desplegable">
-
-                    <li><a href="#">Proyecto 1</a></li>
-                    <li><a href="#">Proyecto 2</a></li>
-                    <li><a href="#">Proyecto 3</a></li>
-
-                </ul> -->
-
-            </li>
-
+            <li><a href="proyectos.html">Proyectos</a></li>
             <li><a href="cv.html">Currículum</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="blog.html">Blog</a></li>
-
         </ul>
 
     </nav>
 
     <section id="contenido">
-        
         <section id="curriculum" class="slide">
             <div class="leyenda">Curriculum</div>
             <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>
-        </section>
-       
+        </section>       
     </section>
 
-    <div id="cookiePopup" class="cookie-popup">
+    <div id="cookiePopup" class="cookie-popup fade">
         <p>
         Este sitio web utiliza cookies para mejorar tu experiencia de navegación, analizar el uso del sitio y habilitar funciones de redes sociales. Solo usamos cookies esenciales para el funcionamiento básico y cookies opcionales para analíticas y personalización. Puedes aceptar todas las cookies, rechazar las no esenciales o personalizar tus preferencias.
         <br>
-        <a href="#">Política de Cookies</a>
+        
         </p>
+        <div>
+            <a href="politica-cookies.html" target="_blank" rel="noopener noreferrer">Política de Cookies</a> <!-- añadimos _blank para que al pulsar se abra en una nueva pestaña y noopener noreferrer por seguridad -->
+        </div>
         <button onclick="aceptarCookies()">Aceptar todas</button>
         <button onclick="rechazarCookies()">Rechazar no esenciales</button>
         <button onclick="personalizarCookies()">Personalizar</button>
     </div>
+    <!-- Popup de selección de cookies personalizadas -->
+    <div id="personalizarPopup" class="cookie-personalizar-popup fade hidden">
+        <div class="popup-content">
+            <h2>Preferencias de cookies</h2>
+            <label><input type="checkbox" checked disabled> Cookies esenciales (obligatorias)</label>
+            <p>Estas cookies son necesarias para el funcionamiento básico del sitio web y no se pueden desactivar. Se utilizan para funciones como el inicio de sesión, la seguridad del sitio, la gestión de la sesión y la preferencia de idioma.</p>
+            <label><input type="checkbox" id="analyticsCookies"> Cookies analíticas</label>
+            <p>Estas cookies nos ayudan a entender cómo interactúan los visitantes con el sitio web. Recogen información de forma anónima y permiten mejorar la experiencia del usuario a través del análisis de estadísticas de navegación.</p>
+            <label><input type="checkbox" id="personalizationCookies"> Cookies de personalización</label>
+            <p>Estas cookies permiten recordar tus preferencias y personalizar el contenido del sitio web. Pueden utilizarse, por ejemplo, para mostrar contenido adaptado a tu ubicación o idioma.</p>
+            <div class="popup-buttons">
+            <button onclick="guardarPreferencias()">Guardar preferencias</button>
+            <button onclick="cerrarPersonalizacion()">Cerrar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/menu.js"></script>
-    <!-- <script src="js/slider.js"></script> -->
     <script src="js/oscuro.js"></script>
     <script src="js/cookies.js"></script>
+
+    <footer>
+        
+        <ul class="iconos">
+            <li><a href="#" class="iconos marcas fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="iconos marcas fa-github"><span class="label">GitHub</span></a></li>
+            <!-- <li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+            <li><a href="#" class="iconos marcas fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <!-- <li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li> -->
+        </ul>
+
+        
+        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+            
+    </footer>
+
 </body>
-<footer>
-
-    <ul class="iconos">
-        <li><a href="#" class="iconos marcas fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="iconos marcas fa-github"><span class="label">GitHub</span></a></li>
-        <!-- <li><a href="#" class="iconos marcas fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-        <li><a href="#" class="iconos marcas fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-        <!-- <li><a href="#" class="iconos marcas fa-google-plus-g"><span class="label">Google+</span></a></li> -->
-    </ul>
-
-    
-    <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
-    
-    
-</footer>
 </html>

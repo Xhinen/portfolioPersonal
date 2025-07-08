@@ -1,0 +1,39 @@
+form{
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button{
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-mensaje{
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+
+}
