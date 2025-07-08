@@ -16,4 +16,4 @@ form.addEventListener("submit", function(e){
     mensajeDiv.textContent = "Mensaje enviado correctamente";
     mensajeDiv.style.color = "green";
     form.requestFullscreen();
-})
+});
