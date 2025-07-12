@@ -1,16 +1,3 @@
-/* const popup = document.getElementById("cookiePopup");
-const btn = document.getElementById("acceptCookies");
-//Cuando no hay cookies aceptadas
-if(!localStorage.cookiesAccepted){
-    popup.classList.add("show");
-}
-
-btn.addEventListener("click", function(){
-    localStorage.cookiesAccepted = "true";
-    popup.classList.remove("show");
-}); */
-
-
 function aceptarCookies() {
     document.cookie = "cookie_consent=accepted; max-age=31536000; path=/";
     document.getElementById("cookiePopup").style.display = "none";
@@ -20,11 +7,6 @@ function rechazarCookies() {
     document.cookie = "cookie_consent=rejected; max-age=31536000; path=/";
     document.getElementById("cookiePopup").style.display = "none";
 }
-
-/* function personalizarCookies() {
-    // Aquí puedes abrir un modal o redirigir a una página para personalizar cookies
-    alert("Funcionalidad de personalización en desarrollo.");
-} */
 
 // Mostrar popup de personalización, añadido con .classList.add/remove("hidden") la animación del banner y el popup
 function personalizarCookies() {
@@ -47,23 +29,23 @@ function cerrarPersonalizacion() {
 // Aceptar todas las cookies
 function aceptarCookies() {
     localStorage.setItem("cookiePreferences", JSON.stringify({
+        essential: true,
         analytics: true,
         personalization: true
     }));
 
-    ocultarBannerCookies();
-    console.log("Todas las cookies aceptadas");
+    document.getElementById("cookiePopup").classList.add("hidden");
 }
 
 // Rechazar cookies no esenciales
 function rechazarCookies() {
     localStorage.setItem("cookiePreferences", JSON.stringify({
+        essential: true,
         analytics: false,
         personalization: false
     }));
 
-    ocultarBannerCookies();
-    console.log("Solo cookies esenciales aceptadas");
+    document.getElementById("cookiePopup").classList.add("hidden");
 }
 
 // Guardar preferencias personalizadas
@@ -72,13 +54,13 @@ function guardarPreferencias() {
     const personalization = document.getElementById("personalizationCookies").checked;
 
     localStorage.setItem("cookiePreferences", JSON.stringify({
-        analytics,
-        personalization
+        essential: true,
+        analytics: analytics,
+        personalization: personalization
     }));
 
-    document.getElementById("personalizarPopup").classList.add("hidden");
-    ocultarBannerCookies();
-    console.log("Preferencias personalizadas guardadas:", { analytics, personalization });
+    cerrarPersonalizacion();
+    document.getElementById("cookiePopup").classList.add("hidden");
 }
 
 // Ocultar el banner de cookies
@@ -88,9 +70,14 @@ function ocultarBannerCookies() {
 
 // Comprobar preferencias al cargar la web
 document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("cookiePopup");
     const prefs = localStorage.getItem("cookiePreferences");
+
     if (prefs) {
         ocultarBannerCookies();
         console.log("Preferencias ya guardadas:", JSON.parse(prefs));
+    } else {
+        popup.classList.remove("hidden"); // Mostrar el banner solo si no hay preferencias
     }
 });
+
