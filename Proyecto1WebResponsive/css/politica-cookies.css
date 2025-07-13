@@ -18,6 +18,12 @@ body{
 
 h1{
     font-size: 300%;
+    color: #0aa5ec;
+}
+
+h2{
+    font-size: 200%;
+    color: #0aa5ec;
 }
 
 body p{
