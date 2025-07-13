@@ -1,5 +1,5 @@
 /* Slider */
-#banner {
+#banner{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -11,20 +11,20 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.banner-slide {
+.banner-slide{
     position: relative;
     width: 100%;
     height: 50%;
 }
 
-.slides-container {
+.slides-container{
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
     height: 50%;
 }
 
-.slides-container .slide {
+.slides-container .slide{
     flex: 0 0 100%;
     height: 100%;
     display: flex;
@@ -37,20 +37,20 @@
     padding-bottom: 2rem; /* espacio para los puntos por arriba, entre el texto del slide y los puntos*/
 }
 
-.banner-slide .leyenda {
+.banner-slide .leyenda{
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: bold;
     padding: 1em 0 0;
 }
 
-.banner-slide p {
+.banner-slide p{
     max-width: 800px;
     text-align: center;
     line-height: 1.5;
 }
 
-.slider button {
+.slider button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -63,11 +63,15 @@
     z-index: 10;
 }
 
-.slider .prev {
+.slider .prev{
     left: 10px;
+    display: inline-block;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    top: 96px;
 }
 
-.slider .next {
+.slider .next{
     right: 10px;
 }
 
