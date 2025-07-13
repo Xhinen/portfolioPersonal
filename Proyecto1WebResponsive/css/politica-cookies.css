@@ -20,8 +20,11 @@ h1{
     font-size: 300%;
 }
 
-body p, ul{
-    border: 1px solid #0aa5ec;
+body p{
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #474747;
     text-align: justify;
     margin: 3%;
     padding: 3%;

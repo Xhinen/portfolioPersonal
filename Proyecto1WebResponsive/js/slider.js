@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const contenidoSlides = document.querySelectorAll("#contenido .slide");
+    const contenidoSlides = document.querySelectorAll(".contenido .slide");
     const slidesContainer = document.querySelector("#banner .slides-container");
     const dotsContainer = document.querySelector(".slider-dots");
 

@@ -120,16 +120,16 @@ header{
 
 }
 
-#contenido{
+.contenido{
     padding: 3em 0;
 }
 
-#contenido p{
+.contenido p{
     border: 1px solid #eaeaea;
     border-radius: 10px;
     background-color: #fafafa;
     color: #474747;
-    font-size: 160%;
+    font-size: 150%;
     text-align: justify;
     margin: 3%;
     padding: 3%;
@@ -140,7 +140,7 @@ header{
     font-family: 'Century Gothic',sans-serif;
     color: #0aa5ec;
     text-align: center;
-    font-size: 200%;
+    font-size: 250%;
     padding: 1.5em 0 0;
 }
 
