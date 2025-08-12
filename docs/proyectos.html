@@ -41,10 +41,83 @@
     </nav>
 
     <section class="contenido">
-        <section id="proyectos" class="slide">
+        <section class="slide">
             <div class="leyenda">Proyectos</div>
-            <p>HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. The markup tells the Web browser how to display a Web page's words and images for the user. Each individual markup code is referred to as an element (but many people also refer to it as a tag). Some elements come in pairs that indicate when some display effect is to begin and when it is to end.</p>
-        </section>        
+                <p>
+                ¡Bienvenidos a mi portafolio de proyectos! En esta sección, presento una práctica integral realizada durante el primer semestre del módulo de Implantación 
+                de Sistemas Operativos. Este ejercicio práctico simula entornos empresariales reales mediante la configuración de máquinas virtuales (MV) en 
+                herramientas como VMware y Proxmox, enfocándome en la administración de dominios, acceso a recursos compartidos y sistemas duales.
+                </p>
+        </section>     
+    </section>
+    <section class="contenido">
+            <div class="leyenda">Implementación de Windows Server 2022</div>
+            <p>
+                El objetivo principal ha sido crear un ecosistema virtual seguro y eficiente, donde se integran sistemas Windows y 
+                Linux para gestionar usuarios, grupos y permisos de acceso. Los hitos clave incluyen:<br><br>
+                   
+                <strong>Acceso desde clientes</strong>: Integración de una MV con Windows 11 Pro y otra con Ubuntu, demostrando conectividad al dominio y pruebas de lectura/escritura en carpetas compartidas vía Samba.<br><br>
+                <strong>Virtualización avanzada con Proxmox</strong>: Instalación de Proxmox en una MV, subida de una ISO de Debian y creación de una MV interna para su ejecución.<br><br>
+                <strong>Sistema dual boot</strong>: Una MV con Windows 10 Enterprise y Ubuntu 25.04, configurada para un arranque simultáneo sin intervención manual inicial, destacando la detección automática de GRUB.<br><br>
+                <strong>Configuración de un dominio en Windows Server 2022</strong>: Creación de discos adicionales, usuarios, grupos (RRHH, CONTABILIDAD y SIA) y recursos compartidos con permisos estrictos, accesibles solo por los perfiles autorizados.<br><br>
+                    
+                
+                Esta práctica no solo refuerza conceptos como Active Directory, DNS, Kerberos y permisos NTFS/Samba, sino que también resuelve desafíos reales,
+                 como la integración de Linux en dominios Windows. Realizada por completo en un entorno virtualizado en mi PC con Garuda OS, demuestra versatilidad y
+                  resolución de problemas en escenarios mixtos.<br>
+                
+                Explora las capturas de pantalla y detalles paso a paso en el documento adjunto. ¡Espero que inspire tus propios proyectos en sistemas operativos! 
+                Si tienes preguntas, contáctame.<br><br>
+                <embed src="Archivos/practica1ImplementaciónDeSistema.pdf" type="application/pdf">
+            </p>
+    </section>
+    <section class="contenido">
+            <div class="leyenda">Simulación y diseño de una LAN para empresas</div>
+            <p>
+                El objetivo principal ha sido construir una topología de red escalable y segura, integrando dispositivos de enrutamiento y 
+                conmutación para gestionar tráfico departamental, con acceso controlado y enrutamiento inter-VLAN. Los hitos clave incluyen:<br><br>
+                   
+                <strong>Diseño de topología</strong>: Un router principal (2911) conectado a un switch de capa 3 (3560-PS), dos switches de capa 2 (2960-24TT) interconectados, tres PCs por departamento (Administración, Ventas, Soporte Técnico) y servidores DHCP y DNS/HTTP en una VLAN dedicada.<br><br>
+                <strong>Configuración de dispositivos</strong>: Asignación de IPs, contraseñas encriptadas, banners de seguridad, y enrutamiento IP en el switch core; configuración de VTP para propagar VLANs (10: Administración, 20: Ventas, 30: Soporte Técnico, 99: Servidores).<br><br>
+                <strong>Implementación de VLANs y trunks</strong>: Modos trunk entre switches para tráfico multi-VLAN, modos access para puertos finales, y helpers para DHCP en subinterfaces VLAN.<br><br>
+                <strong>Seguridad y optimización</strong>: Prioridad en Spanning Tree para el switch core como root bridge, encriptación de contraseñas y restricciones de acceso remoto.<br><br>
+                    
+                
+                Esta práctica refuerza conceptos como VLANs, trunking DOT1Q, VTP, STP y configuración CLI en dispositivos Cisco, resolviendo desafíos 
+                como la propagación de VLANs y el enrutamiento inter-VLAN. Realizada completamente en Packet Tracer, demuestra habilidades en diseño de redes seguras y 
+                eficientes para entornos corporativos.<br>
+                
+                Explora las capturas de pantalla y detalles paso a paso en el documento adjunto. ¡Espero que inspire tus propios proyectos en sistemas operativos! 
+                Si tienes preguntas, contáctame.<br><br>
+                <embed src="Archivos/DocumentaciónPrácticaPacketTracer.pdf" type="application/pdf">
+            </p>
+    </section>
+    <section class="contenido">
+            <div class="leyenda">Tutorial básica con Nmap</div>
+            <p>
+                El objetivo principal ha sido comprender y aplicar Nmap en entornos simulados, utilizando Kali Linux y Metasploitable 2 
+                para demostrar técnicas de pentesting básico. Los hitos clave incluyen:<br><br>
+                   
+                <strong>Descripción y funcionalidades</strong>: Detalle de Nmap como herramienta open-source para descubrimiento de hosts, escaneo de puertos TCP/UDP, detección de servicios/versiones, fingerprinting de OS y ejecución de scripts NSE para vulnerabilidades.<br><br>
+                <strong>Requisitos e instalación</strong>: Especificaciones técnicas mínimas y proceso de instalación en distribuciones Linux como Garuda OS (basado en Arch) y Kali Linux.<br><br>
+                <strong>Uso básico y comandos</strong>: Ejecución de comandos CLI para verificar configuraciones de red, ping, escaneos de hosts (-sn), puertos/servicios (-sV -O), y scripts específicos para vulnerabilidades en servicios como FTP, SSH, Telnet, SMTP, HTTP, RPC/NFS, Samba, MySQL, PostgreSQL y VNC.<br><br>
+                <strong>Simulación práctica</strong>: Escaneos de vulnerabilidades conocidas y acceso a shell remoto, destacando la importancia de actualizaciones y configuraciones seguras.<br><br>
+                    
+                
+                Esta práctica no solo refuerza conceptos de hardware subyacente en redes y seguridad, sino que también resuelve desafíos reales como 
+                la detección de accesos anónimos, backdoors y exploits famosos (e.g., EternalBlue). Realizada en máquinas virtuales, 
+                demuestra versatilidad en herramientas de código abierto para auditorías éticas.<br>
+                
+                Explora las capturas de pantalla y detalles paso a paso en el documento adjunto. ¡Espero que inspire tus propios proyectos en sistemas operativos! 
+                Si tienes preguntas, contáctame.<br><br>
+                <embed src="Archivos/DocumentacionPracticaFH.pdf" type="application/pdf">
+            </p>
+    </section>
+    <section class="contenido">
+            <p>
+                Explora las capturas de pantalla y detalles paso a paso en los documentos. ¡Espero que inspire tus propios proyectos en sistemas operativos! 
+                Si tienes preguntas, no dudes contáctarme. Gracias.
+            </p>
     </section>
 
     <div id="cookiePopup" class="cookie-popup fade hidden">
