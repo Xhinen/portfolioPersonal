@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slideInterval = setInterval(() => {
             currentSlide = (currentSlide + 1) % totalSlides;
             updateSlidePosition();
-        }, 5000);
+        }, 10000);
     }
 
     function resetInterval() {
