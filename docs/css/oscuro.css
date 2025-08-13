@@ -112,6 +112,10 @@ body.oscuro .icono-oscuro{
     color: #fafafa;
 }
 
+.oscuro form button {
+    color: #272727;
+}
+
 /* .oscuro h2{
     color: #e0e0e0;
 } */
