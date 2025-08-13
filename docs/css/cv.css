@@ -1,0 +1,17 @@
+.contenido ul li{
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #474747;
+    text-align: justify;
+    margin: 3% 10% 0 10%;
+    padding: 2%;
+    line-height: 200%;
+}
+.contenido ul li{
+    font-size: 150%;
+}
+
+.contenido ul li ul li{
+    font-size: 100%;
+}

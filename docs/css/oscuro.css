@@ -80,6 +80,13 @@ body.oscuro .icono-oscuro{
     color: #e0e0e0;
 }
 
+.oscuro .contenido ul li{
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    background-color: #303030;
+    color: #e0e0e0;
+}
+
 .oscuro .cookie-popup{
     background-color: #e0e0e0;
     color: #474747;
