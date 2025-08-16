@@ -8,10 +8,10 @@
     padding: 2%;
     line-height: 200%;
 }
-.contenido ul li{
-    font-size: 150%;
-}
 
 .contenido ul li ul li{
     font-size: 100%;
+    list-style: square;
+    border: none;
+    padding: 0;
 }
