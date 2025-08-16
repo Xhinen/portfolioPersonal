@@ -54,11 +54,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: transparent;
+    color: #0aa5ec;
     border: none;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
     z-index: 10;
 }
