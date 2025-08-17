@@ -160,6 +160,11 @@ header{
     padding: 1.5em 0 0;
 }
 
+.contenido embed{
+    width: 100%;
+    height: 1200px;
+}
+
 /* Pie de página */
 footer{
     height: 10em;
