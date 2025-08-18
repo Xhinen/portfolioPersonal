@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio Alberto</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/blog.css"/>
     <link rel="stylesheet" href="css/oscuro.css"/>
+    <link rel="stylesheet" href="css/blog.css"/>
     <link rel="stylesheet" href="css/cookies.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -40,7 +42,7 @@
 
     </nav>
 
-   <section class="contenido">
+    <section class="contenido">
             <div class="leyenda">Comandos Esenciales de Linux para especialistas en ciberseguridad.</div>
             <p>
                 Linux se ha convertido en el sistema operativo preferido por los profesionales de la ciberseguridad, ya que sirve como
@@ -55,6 +57,154 @@
                 Traducción realizada con la versión gratuita del traductor DeepL.com<br><br>
                 <embed src="Archivos/ComandosEsencialesdeLinuxparaEspcialistasenCiberseguridad.pdf" type="application/pdf">
             </p>
+    </section>
+    <section class="contenido">
+            <div class="leyenda">Puertos más conocidos e importantes en ciberseguridad.</div>
+            <p>
+                En el ámbito de la ciberseguridad, los puertos de red son fundamentales porque representan los puntos de entrada y salida para la comunicación en redes TCP/IP. 
+                Cada puerto está asociado a un protocolo (como TCP o UDP) y a un servicio específico, y conocerlos es esencial para identificar vulnerabilidades, 
+                configurar firewalls, detectar intrusiones y prevenir ataques. Puertos bien conocidos (del 0 al 1023) son asignados por la IANA y 
+                utilizados por servicios comunes, mientras que otros registrados (1024-49151) pueden ser explotados en escenarios de seguridad.<br><br>
+                A continuación, presento una tabla con los puertos más importantes y conocidos en ciberseguridad, basada en listas estándar de fuentes especializadas. 
+                Incluyo el número de puerto, el protocolo, el servicio asociado y una breve explicación de su relevancia en seguridad, incluyendo riesgos comunes como exploits, 
+                ataques de denegación de servicio (DoS) o fugas de información. Esta información te servirá para estructurar tu artículo, enfocándote en por qué estos 
+                puertos deben monitorearse o bloquearse si no se usan.
+            </p>
+        <table>
+            <caption>Puertos más importantes en ciberseguridad</caption>
+            <tr>
+                <th>Puerto</th>
+                <th>Protocolo</th>
+                <th>Servicio</th>
+                <th>Importancia en Ciberseguridad</th>
+            </tr>
+            <tr>
+                <td>20/21</td>
+                <td>TCP</td>
+                <td>FTP (File Transfer Protocol)</td>
+                <td>Utilizado para transferencia de archivos; vulnerable a intercepción de datos si no se encripta, común en ataques de fuerza bruta y robo de credenciales.</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>TCP/UDP</td>
+                <td>SSH (Secure Shell) / SCP / SFTP</td>
+                <td>Proporciona acceso remoto seguro y transferencia de archivos encriptada; susceptible a ataques de fuerza bruta si las contraseñas son débiles, esencial para administración remota segura.</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>TCP</td>
+                <td>Telnet</td>
+                <td>Comunicación remota no encriptada; altamente vulnerable a eavesdropping y ataques man-in-the-middle, se recomienda reemplazarlo por SSH.</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>TCP</td>
+                <td>SMTP (Simple Mail Transfer Protocol)</td>
+                <td>Enrutamiento de correos electrónicos; explotado para relay de spam, phishing y malware vía email.</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>TCP/UDP</td>
+                <td>DNS (Domain Name System)</td>
+                <td>Resolución de nombres de dominio; objetivo de ataques de spoofing, envenenamiento de caché y amplificación DoS.</td>
+            </tr>
+            <tr>
+                <td>67/68</td>
+                <td>UDP</td>
+                <td>DHCP (Dynamic Host Configuration Protocol)</td>
+                <td>Asignación dinámica de IP; vulnerable a servidores rogue que comprometen la configuración de red.</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>UDP</td>
+                <td>TFTP (Trivial File Transfer Protocol)</td>
+                <td>Transferencia simple de archivos sin autenticación; usado en distribución de malware y accesos no autorizados.</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>TCP/UDP</td>
+                <td>HTTP (Hypertext Transfer Protocol)</td>
+                <td>Trynthesized; común en vulnerabilidades como inyecciones SQL, XSS y exploits de aplicaciones web.</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>TCP/UDP</td>
+                <td>Kerberos</td>
+                <td>Autenticación de red; crítico para seguridad en entornos Windows, pero susceptible a ataques en el centro de distribución de claves.</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>TCP</td>
+                <td>POP3 (Post Office Protocol v3)</td>
+                <td>Recepción de emails; vulnerable a robo de credenciales si no usa SSL.</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>UDP</td>
+                <td>NTP (Network Time Protocol)</td>
+                <td>Sincronización de tiempo; explotado en ataques de amplificación DoS.</td>
+            </tr>
+            <tr>
+                <td>135</td>
+                <td>TCP/UDP</td>
+                <td>Microsoft RPC (Remote Procedure Call)</td>
+                <td>Gestión remota en Windows; objetivo de ejecución remota de código y propagación de malware.</td>
+            </tr>
+            <tr>
+                <td>137-139</td>
+                <td>TCP/UDP</td>
+                <td>NetBIOS</td>
+                <td>Servicios de nombres y sesiones en Windows; usados en enumeración de red y movimiento lateral en ataques.</td>
+            </tr>
+            <tr>
+                <td>143</td>
+                <td>TCP/UDP</td>
+                <td>IMAP (Internet Message Access Protocol)</td>
+                <td>Gestión de emails en servidores; permite comunicación bidireccional, vulnerable a compromisos si no encriptado.</td>
+            </tr>
+            <tr>
+                <td>161/162</td>
+                <td>UDP</td>
+                <td>SNMP (Simple Network Management Protocol)</td>
+                <td>Monitoreo de dispositivos de red; riesgo de divulgación de información si mal configurado.</td>
+            </tr>
+            <tr>
+                <td>389</td>
+                <td>TCP/UDP</td>
+                <td>LDAP (Lightweight Directory Access Protocol)</td>
+                <td>Acceso a directorios; usado en autenticación, vulnerable a inyecciones y ataques de autenticación.</td>
+            </tr>
+            <tr>
+                <td>443</td>
+                <td>TCP/UDP</td>
+                <td>HTTPS (HTTP Secure)</td>
+                <td>Tráfico web encriptado con TLS; esencial para seguridad, pero aún expuesto a ataques como downgrade o falsificación de certificados.</td>
+            </tr>
+            <tr>
+                <td>445</td>
+                <td>TCP</td>
+                <td>SMB (Server Message Block)</td>
+                <td>Compartición de archivos en Windows; explotado por gusanos como WannaCry para propagación rápida.</td>
+            </tr>
+            <tr>
+                <td>1433</td>
+                <td>TCP</td>
+                <td>Microsoft SQL Server</td>
+                <td>Base de datos; vulnerable a inyecciones SQL y accesos no autorizados si expuesto.</td>
+            </tr>
+            <tr>
+                <td>3306</td>
+                <td>TCP</td>
+                <td>MySQL</td>
+                <td>Servidor de base de datos; común en ataques de fuerza bruta y explotación de vulnerabilidades de software.</td>
+            </tr>
+            <tr>
+                <td>3389</td>
+                <td>TCP</td>
+                <td>RDP (Remote Desktop Protocol)</td>
+                <td>Acceso remoto a escritorios Windows; susceptible a ataques de fuerza bruta y exploits como BlueKeep.</td>
+            </tr>
+        </table>
     </section>
 
     <div id="cookiePopup" class="cookie-popup fade hidden">

@@ -93,7 +93,7 @@ body.oscuro .icono-oscuro{
     border: none;
     padding: 0;
 }
-
+/* Cookies */
 .oscuro .cookie-popup{
     background-color: #e0e0e0;
     color: #474747;
@@ -103,11 +103,7 @@ body.oscuro .icono-oscuro{
     background-color: #e0e0e0;
     color: #474747;
 }
-
-/* .oscuro #tituloCookies{
-    color: #e0e0e0;
-} */
-
+/* formulario */
 .oscuro form{
     background-color: #303030;
     color: #e0e0e0;
@@ -122,7 +118,21 @@ body.oscuro .icono-oscuro{
 .oscuro form button {
     color: #272727;
 }
-
-/* .oscuro h2{
+/* tabla */
+.oscuro table{
+    background-color: #3f3f3f;
     color: #e0e0e0;
-} */
+}
+
+.oscuro caption{
+    color: #e0e0e0;
+}
+
+.oscuro tr:hover {
+    background-color: #e0e0e0;
+    color: #3f3f3f;
+}
+
+.oscuro tr th{
+    color: #3f3f3f;
+}
