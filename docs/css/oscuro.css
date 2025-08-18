@@ -124,10 +124,6 @@ body.oscuro .icono-oscuro{
     color: #e0e0e0;
 }
 
-.oscuro caption{
-    color: #e0e0e0;
-}
-
 .oscuro tr:hover {
     background-color: #e0e0e0;
     color: #3f3f3f;

@@ -19,8 +19,23 @@ caption {
     font-size: 1.1em;
     padding-bottom: 20px;
     font-weight: bold;
+    color: #0aa5ec;
 }
 tr:hover {
     background-color: #3f3f3f;
     color: #e0e0e0;
+}
+
+/* modelo OSI */
+.contenido h2, h3{
+    font-family: 'Century Gothic',sans-serif;
+    color: #0aa5ec;
+    text-align: center;
+}
+.contenido h2{
+    padding: 1em 0 1em 0;
+}
+
+.contenido h3{
+    padding: 1em 0 1em 0;
 }

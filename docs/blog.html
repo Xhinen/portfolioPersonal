@@ -207,6 +207,81 @@
         </table>
     </section>
 
+    <section class="contenido">
+        <div class="leyenda">El Modelo OSI en Ciberseguridad.</div>
+        
+        <p>
+        El <strong>Modelo OSI</strong> (Open Systems Interconnection) es un marco conceptual desarrollado por la Organización Internacional de Normalización (ISO) para estandarizar las funciones de los sistemas de telecomunicaciones y redes. Divide el proceso de comunicación en redes en <strong>siete capas</strong>, cada una con funciones específicas. Conocer el Modelo OSI es crucial en ciberseguridad porque ayuda a entender cómo fluyen los datos, identificar puntos de vulnerabilidad y diseñar medidas de protección en cada capa.
+        Diagrama del Modelo OSI, mostrando las siete capas y sus funciones principales en la comunicación de red. Cada capa representa un punto crítico para implementar medidas de ciberseguridad.
+        </p>
+
+        <h2>Las Siete Capas del Modelo OSI</h2>
+
+        <h3>1. Capa Física (Capa 1)</h3>
+        <p>
+            <strong>Función:</strong> Transmite bits crudos a través de medios físicos (cables, fibra óptica, señales inalámbricas). Define especificaciones de hardware como voltajes, conectores y frecuencias.<br><br>
+            <strong>Ejemplos:</strong> Ethernet, USB, Wi-Fi, cables de red (RJ45).<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Vulnerable a ataques físicos como intercepción de cables (tapping), interferencias electromagnéticas o ataques de denegación de servicio (DoS) mediante saturación de señal.<br><br>
+            <strong>Medidas de seguridad:</strong> Proteger el acceso físico a dispositivos, usar cables blindados, implementar detección de intrusos físicos.<br><br>
+        </p>
+        
+        <h3>2. Capa de Enlace de Datos (Capa 2)</h3>
+        <p>
+            <strong>Función:</strong> Gestiona la transferencia de datos entre nodos adyacentes en una red, asegurando una comunicación libre de errores. Maneja direcciones MAC y tramas.<br><br>
+            <strong>Ejemplos:</strong> Protocolos como Ethernet, PPP; switches y puentes.<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Susceptible a ataques como ARP spoofing, MAC flooding o VLAN hopping, que comprometen la integridad de la red local.<br><br>
+            <strong>Medidas de seguridad:</strong> Configurar listas de control de acceso (ACL), usar autenticación 802.1X, monitorear tráfico con herramientas como Wireshark.<br><br>
+        </p>
+
+        <h3>3. Capa de Red (Capa 3)</h3>
+        <p>
+            <strong>Función:</strong> Gestiona el enrutamiento de paquetes entre redes, determinando la mejor ruta. Utiliza direcciones IP y protocolos como IP.<br><br>
+            <strong>Ejemplos:</strong> IP (IPv4/IPv6), ICMP, routers.<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Blanco de ataques como IP spoofing, ataques de enrutamiento (BGP hijacking) y DoS (ping flood).<br><br>
+            <strong>Medidas de seguridad:</strong> Implementar firewalls, filtrado de paquetes, y protocolos seguros como IPSec.<br><br>
+        </p>
+
+        <h3>4. Capa de Transporte (Capa 4)</h3>
+        <p>
+            <strong>Función:</strong> Proporciona transferencia de datos fiable o no fiable entre dispositivos, gestionando control de flujo, segmentación y corrección de errores.<br><br>
+            <strong>Ejemplos:</strong> TCP, UDP, puertos (como 80 para HTTP, 443 para HTTPS).<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Vulnerable a ataques como SYN flooding (DoS), secuestro de sesiones TCP o explotación de puertos abiertos.<br><br>
+            <strong>Medidas de seguridad:</strong> Usar firewalls basados en puertos, inspección de paquetes, y cifrado de sesiones (TLS).<br><br>
+        </p>
+
+        <h3>5. Capa de Sesión (Capa 5)</h3>
+        <p>
+            <strong>Función:</strong> Establece, mantiene y termina sesiones entre aplicaciones. Gestiona diálogos y sincronización.<br><br>
+            <strong>Ejemplos:</strong> NetBIOS, RPC, protocolos como SMB.<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Explotada en ataques como secuestro de sesiones o abuso de protocolos como SMB (ejemplo: WannaCry).<br><br>
+            <strong>Medidas de seguridad:</strong> Implementar autenticación robusta, cifrado de sesiones, y monitoreo de sesiones anómalas.<br><br>
+        </p>
+
+        <h3>6. Capa de Presentación (Capa 6)</h3>
+        <p>        
+            <strong>Función:</strong> Traduce datos entre el formato de la aplicación y el de la red, manejando cifrado, compresión y conversión de datos.<br><br>
+            <strong>Ejemplos:</strong> SSL/TLS, JPEG, XML.<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Crítica para proteger datos mediante cifrado; vulnerable a ataques de downgrade (forzar protocolos inseguros) o inyecciones de datos malformados.<br><br>
+            <strong>Medidas de seguridad:</strong> Usar TLS 1.3, validar formatos de datos, y evitar configuraciones obsoletas (como SSLv2).<br><br>
+        </p>
+
+        <h3>7. Capa de Aplicación (Capa 7)</h3>
+        <p>
+            <strong>Función:</strong> Proporciona servicios de red directamente a las aplicaciones del usuario, como navegadores o clientes de correo.<br><br>
+            <strong>Ejemplos:</strong> HTTP, FTP, SMTP, DNS.<br><br>
+            <strong>Relevancia en ciberseguridad:</strong> Principal objetivo de ataques como phishing, inyecciones SQL, XSS, y exploits de aplicaciones web.<br><br>
+            <strong>Medidas de seguridad:</strong> Implementar WAF (Web Application Firewalls), validar entradas, y parchear aplicaciones regularmente.<br><br>
+        </p>
+
+        <h2>Relevancia del Modelo OSI en Ciberseguridad</h2>
+        <p>El Modelo OSI es una herramienta clave para profesionales de ciberseguridad porque permite:<br><br>
+            <strong>Identificar vulnerabilidades:</strong> Cada capa tiene riesgos específicos que deben mitigarse (por ejemplo, DoS en la capa 3, inyecciones en la capa 7).<br><br>
+            <strong>Diseñar defensas en capas:</strong> Aplicar controles de seguridad en cada nivel, como firewalls (capa 3-4), cifrado (capa 6), y autenticación (capa 5-7).<br><br>
+            <strong>Análisis de incidentes:</strong> Herramientas como Wireshark o tcpdump analizan tráfico en diferentes capas para detectar anomalías.<br><br>
+            <strong>Estandarización:</strong> Facilita la comunicación entre equipos al usar un marco universal para describir problemas de red.<br><br>
+        </p>
+    </section>
+
     <div id="cookiePopup" class="cookie-popup fade hidden">
         <p>
         Este sitio web utiliza cookies para mejorar tu experiencia de navegación, analizar el uso del sitio y habilitar funciones de redes sociales. Solo usamos cookies esenciales para el funcionamiento básico y cookies opcionales para analíticas y personalización. Puedes aceptar todas las cookies, rechazar las no esenciales o personalizar tus preferencias.
